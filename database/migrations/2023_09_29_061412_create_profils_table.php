@@ -11,12 +11,9 @@ return new class extends Migration
      */
     public function up(): void
     {
-        //
-        schema::create('posts',function(Blueprint $table){
+        Schema::create('profils', function (Blueprint $table) {
             $table->id();
-            $table->string('image'); 
-            $table->string('judul'); 
-            $table->text('content'); 
+            $table->timestamps();
         });
     }
 
@@ -25,6 +22,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        //
+        Schema::dropIfExists('profils');
     }
 };

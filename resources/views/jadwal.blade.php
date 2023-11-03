@@ -1,27 +1,4 @@
-{{-- @extends('layouts.base')
 
-@section('content')
-<div class="hal-jadwal">
-<h1>Jadwal Penerbangan</h1>
-
-<table border="1">
-    <tr>
-        <th>ID</th>
-        <th>Maskapai</th>
-        <th>Destinasi</th>
-        <th>Tanggal</th>
-    </tr>
-    @foreach($jadwal as $p)
-    <tr>
-        <td>{{ $p->id }}</td>
-        <td>{{ $p->maskapai }}</td>
-        <td>{{ $p->destinasi }}</td>
-        <td>{{ $p->tanggal}}</td>
-    </tr>
-    @endforeach
-</table>
-</div>
-@endsection --}}
 @extends('layouts.base')
 @section('content')
 <link rel="stylesheet" href="css2/fonts/icomoon/style.css">
